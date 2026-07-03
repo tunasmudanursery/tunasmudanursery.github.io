@@ -75,10 +75,16 @@
     </script>
 
 
-    <!-- === CSS & FONTS === -->
+        <!-- === CSS & FONTS === -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Solusi Font display: Mempercepat jabat tangan koneksi ke server Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Solusi Render-blocking: Memuat FontAwesome secara asynchronous (di latar belakang) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
 
     <style>
         body { font-family: 'Poppins', sans-serif; }
