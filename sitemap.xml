@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://beny-cyber.github.io/tunas-muda/</loc>
+    <loc>https://tunasmudanursery.github.io/</loc>
     <priority>1.00</priority>
   </url>
   <url>
-    <loc>https://beny-cyber.github.io/tunas-muda/index.html</loc>
+    <loc>https://tunasmudanursery.github.io/index.html</loc>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://beny-cyber.github.io/tunas-muda/produk.html</loc>
+    <loc>https://tunasmudanursery.github.io/produk.html</loc>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://beny-cyber.github.io/tunas-muda/galeri.html</loc>
+    <loc>https://tunasmudanursery.github.io/galeri.html</loc>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://beny-cyber.github.io/tunas-muda/tentang.html</loc>
+    <loc>https://tunasmudanursery.github.io/tentang.html</loc>
     <priority>0.80</priority>
   </url>
 </urlset>
