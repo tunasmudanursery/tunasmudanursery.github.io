@@ -4,10 +4,7 @@
     <loc>https://tunasmudanursery.github.io/</loc>
     <priority>1.00</priority>
   </url>
-  <url>
-    <loc>https://tunasmudanursery.github.io/index.html</loc>
-    <priority>0.80</priority>
-  </url>
+  
   <url>
     <loc>https://tunasmudanursery.github.io/produk.html</loc>
     <priority>0.80</priority>
