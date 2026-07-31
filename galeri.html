@@ -21,8 +21,6 @@
     <meta name="author" content="Tunas Muda Nurseri">
     <meta name="robots" content="index, follow">
 
-    <link rel="shortcut icon" type="image/x-icon" href="./logotmn.ico">
-
         <!-- === CSS & FONTS === -->
     <script src="https://cdn.tailwindcss.com"></script>
     
@@ -43,28 +41,40 @@
 
 
     <!-- === HEADER === -->
-    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm border-b">
-        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="index.html" class="flex items-center space-x-2 text-2xl font-bold text-emerald-600">
-                <i class="fa-solid fa-leaf"></i>
-                <span>Tunas Muda Nurseri</span>
-            </a>
-            
-            <!-- Tautan Navigasi Atas Lengkap -->
-            <div class="flex items-center space-x-6">
-                <a href="index.html" class="text-sm font-semibold text-gray-600 hover:text-emerald-600 transition-all">
-                    <i class="fa-solid fa-house mr-1"></i> Beranda
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-3 sm:py-4">
+                <a href="index.html" class="flex items-center space-x-2">
+                    <i class="fa-solid fa-leaf text-emerald-600 text-2xl sm:text-3xl shrink-0"></i>
+                    <span class="text-lg sm:text-2xl font-extrabold text-emerald-700 leading-tight">Tunas Muda<br class="sm:hidden"><span class="sm:ml-1.5">Nurseri</span></span>
                 </a>
-                <a href="produk.html" class="hidden sm:inline-block text-sm font-semibold text-gray-600 hover:text-emerald-600 transition-all">
-                    <i class="fa-solid fa-basket-shopping mr-1"></i> Produk
-                </a>
-                <a href="tentang.html" class="hidden sm:inline-block text-sm font-semibold text-gray-600 hover:text-emerald-600 transition-all">
-                    <i class="fa-solid fa-building mr-1"></i> Tentang
-                </a>
-                <a href="https://wa.me/628997993909?text=Halo%20Admin%20Deni,%20saya%20tertarik%20membeli%20bibit%20tanaman%20di%20Tunas%20Muda%20Nurseri" target="_blank" class="bg-emerald-700 hover:bg-emerald-800 text-white px-5 py-2 rounded-full text-sm font-bold transition-all shadow-md flex items-center space-x-2">
-                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                <a href="https://wa.me/628997993909?text=Halo%20Admin%20Deni,%20saya%20tertarik%20membeli%20bibit%20tanaman%20di%20Tunas%20Muda%20Nurseri" target="_blank" class="bg-emerald-800 hover:bg-emerald-900 text-white pl-3 pr-4 py-2 sm:px-5 sm:py-3 rounded-full text-xs sm:text-sm font-bold shadow-md flex items-center space-x-1.5 sm:space-x-2 transition-all shrink-0">
+                    <i class="fa-brands fa-whatsapp text-base sm:text-lg"></i>
                     <span>Hubungi Admin</span>
                 </a>
+            </div>
+            <nav class="grid grid-cols-5 border-t border-gray-100">
+                <a href="index.html" class="flex flex-col items-center justify-center gap-1 py-2.5 text-gray-500 hover:text-emerald-600 transition-all">
+                    <i class="fa-solid fa-house text-base sm:text-lg"></i>
+                    <span class="text-[10px] sm:text-sm font-semibold">Home</span>
+                </a>
+                <a href="produk.html" class="flex flex-col items-center justify-center gap-1 py-2.5 text-gray-500 hover:text-emerald-600 transition-all">
+                    <i class="fa-solid fa-basket-shopping text-base sm:text-lg"></i>
+                    <span class="text-[10px] sm:text-sm font-semibold">Produk</span>
+                </a>
+                <a href="galeri.html" class="flex flex-col items-center justify-center gap-1 py-2.5 text-emerald-700 hover:text-emerald-800 transition-all">
+                    <i class="fa-solid fa-images text-base sm:text-lg"></i>
+                    <span class="text-[10px] sm:text-sm font-semibold">Galeri</span>
+                </a>
+                <a href="kontak.html" class="flex flex-col items-center justify-center gap-1 py-2.5 text-gray-500 hover:text-emerald-600 transition-all">
+                    <i class="fa-solid fa-phone text-base sm:text-lg"></i>
+                    <span class="text-[10px] sm:text-sm font-semibold">Kontak</span>
+                </a>
+                <a href="tentang.html" class="flex flex-col items-center justify-center gap-1 py-2.5 text-gray-500 hover:text-emerald-600 transition-all">
+                    <i class="fa-solid fa-building text-base sm:text-lg"></i>
+                    <span class="text-[10px] sm:text-sm font-semibold">Tentang</span>
+                </a>
+            </nav>
         </div>
     </header>
 
@@ -250,28 +260,64 @@
                 </div>
             </div>
 
-            
-            </div>
-
         </div>
     </main>
 
     <!-- === FOOTER === -->
-    <footer class="bg-gray-950 text-gray-400 py-12 px-4 border-t border-gray-900 mt-12">
-        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 text-center md:text-left">
-            <div>
-                <h4 class="text-white text-lg font-bold flex items-center justify-center md:justify-start space-x-2 mb-4">
+    <footer class="bg-gray-950 text-gray-400 pt-12 pb-8 px-4 border-t border-gray-900 mt-12">
+        <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div class="col-span-2 md:col-span-1">
+                <h4 class="text-white text-lg font-bold flex items-center space-x-2 mb-4">
                     <i class="fa-solid fa-leaf text-emerald-500"></i>
                     <span>Tunas Muda Nurseri</span>
                 </h4>
-                <p class="text-sm leading-relaxed max-w-md mx-auto md:mx-0">Penyedia aset bibit berkualitas tinggi untuk perkebunan mandiri maupun proyek penghijauan skala besar di seluruh Indonesia.</p>
+                <p class="text-sm leading-relaxed">Penyedia aset bibit berkualitas tinggi untuk perkebunan mandiri maupun proyek penghijauan skala besar di seluruh Indonesia.</p>
             </div>
-            <div class="flex flex-col justify-center items-center md:items-end">
-                <p class="text-sm">
-                    <i class="fa-solid fa-location-dot text-emerald-500 mr-2"></i> Workshop Sentra: Majalengka, West Java
+
+            <!-- === SITEMAP === -->
+            <div>
+                <h4 class="text-white text-sm font-semibold uppercase tracking-wider mb-4">Sitemap</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="index.html" class="hover:text-emerald-400 transition-all">Home</a></li>
+                    <li><a href="produk.html" class="hover:text-emerald-400 transition-all">Katalog Produk</a></li>
+                    <li><a href="galeri.html" class="hover:text-emerald-400 transition-all">Galeri</a></li>
+                    <li><a href="kontak.html" class="hover:text-emerald-400 transition-all">Kontak</a></li>
+                    <li><a href="tentang.html" class="hover:text-emerald-400 transition-all">Tentang</a></li>
+                    <li><a href="pengiriman.html" class="hover:text-emerald-400 transition-all">Metode Pengiriman</a></li>
+                    <li><a href="media.html" class="hover:text-emerald-400 transition-all">Media</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white text-sm font-semibold uppercase tracking-wider mb-4">Workshop & Kontak</h4>
+                <p class="text-sm leading-relaxed mb-2">
+                    <a href="https://wa.me/628997993909" target="_blank" class="hover:text-emerald-400 transition-all">
+                        <i class="fa-brands fa-whatsapp text-emerald-500 mr-2"></i> 08997993909
+                    </a>
                 </p>
-                <p class="text-xs mt-4 text-gray-600">&copy; 2026 Tunas Muda Nurseri. All Rights Reserved.</p>
+                <p class="text-sm leading-relaxed">
+                    <i class="fa-solid fa-location-dot text-emerald-500 mr-2"></i> Majalengka, Jawa Barat
+                </p>
             </div>
+
+            <!-- === MEDIA SOSIAL === -->
+            <div>
+                <h4 class="text-white text-sm font-semibold uppercase tracking-wider mb-4">Ikuti Kami</h4>
+                <div class="flex items-center space-x-3">
+                    <a href="https://www.facebook.com/gudangbibitunggul" target="_blank" rel="noopener" aria-label="Facebook Tunas Muda Nurseri" class="w-9 h-9 rounded-full bg-gray-900 border border-gray-800 flex items-center justify-center text-gray-300 hover:bg-emerald-600 hover:text-white hover:border-emerald-600 transition-all">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@deni_fwd?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener" aria-label="TikTok Tunas Muda Nurseri" class="w-9 h-9 rounded-full bg-gray-900 border border-gray-800 flex items-center justify-center text-gray-300 hover:bg-emerald-600 hover:text-white hover:border-emerald-600 transition-all">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                    <a href="https://business.google.com/n/10278861801910323188/searchprofile?hl=id" target="_blank" rel="noopener" aria-label="Google Bisnisku Tunas Muda Nurseri" class="w-9 h-9 rounded-full bg-gray-900 border border-gray-800 flex items-center justify-center text-gray-300 hover:bg-emerald-600 hover:text-white hover:border-emerald-600 transition-all">
+                        <i class="fa-brands fa-google"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto mt-8 pt-8 border-t border-gray-900 text-center text-xs">
+            <p>&copy; 2026 Tunas Muda Nurseri. Hak Cipta Dilindungi.</p>
         </div>
     </footer>
 
