@@ -1,20 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://sitemaps.org">
   <url>
-    <loc>https://tunasmudanursery.github.io/</loc>
+    <loc>https://github.io</loc>
     <priority>1.00</priority>
   </url>
-  
   <url>
-    <loc>https://tunasmudanursery.github.io/produk.html</loc>
+    <loc>https://github.ioproduk.html</loc>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://tunasmudanursery.github.io/galeri.html</loc>
+    <loc>https://github.iogaleri.html</loc>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://tunasmudanursery.github.io/tentang.html</loc>
+    <loc>https://github.iotentang.html</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://github.iokontak.html</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://github.iopengiriman.html</loc>
     <priority>0.80</priority>
   </url>
 </urlset>
