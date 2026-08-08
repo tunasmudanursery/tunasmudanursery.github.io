@@ -81,6 +81,24 @@
                     <span class="text-[10px] sm:text-sm font-semibold">Tentang</span>
                 </a>
             </nav>
+            <div id="more-menu" class="grid grid-cols-3 border-t border-gray-100 hidden">
+                <a href="pengiriman.html" class="flex flex-col items-center justify-center gap-1 py-2.5 text-gray-500 hover:text-emerald-600 transition-all">
+                    <i class="fa-solid fa-truck-fast text-base sm:text-lg"></i>
+                    <span class="text-[10px] sm:text-sm font-semibold">Pengiriman</span>
+                </a>
+                <a href="media.html" class="flex flex-col items-center justify-center gap-1 py-2.5 text-gray-500 hover:text-emerald-600 transition-all">
+                    <i class="fa-solid fa-photo-film text-base sm:text-lg"></i>
+                    <span class="text-[10px] sm:text-sm font-semibold">Media</span>
+                </a>
+                <a href="faq.html" class="flex flex-col items-center justify-center gap-1 py-2.5 text-gray-500 hover:text-emerald-600 transition-all">
+                    <i class="fa-solid fa-circle-question text-base sm:text-lg"></i>
+                    <span class="text-[10px] sm:text-sm font-semibold">Q&A</span>
+                </a>
+            </div>
+            <button type="button" onclick="toggleMoreMenu()" aria-expanded="false" aria-controls="more-menu" class="w-full flex items-center justify-center py-1.5 border-t border-gray-100 text-gray-400 hover:text-emerald-600 transition-all">
+                <i id="more-menu-icon" class="fa-solid fa-chevron-down text-xs"></i>
+                <span class="sr-only">Tampilkan menu lainnya</span>
+            </button>
         </div>
     </header>
 
@@ -158,7 +176,6 @@
                     wilayah kami berada di ketinggian 217 mdpl. Daerah ini memiliki iklim tropis yang ideal untuk tanaman buah dll, dan komoditas wilayan kami adalah pertanian, </p>
                 <p>2010 Adalah titik awal terbentuknya kami, berbekal ilmu dari studi pertanian dan pengalaman dari sesepuh petani terdahulu, kami berinisiatif untuk hadir dan melanjutkan pengembangan potensi pembibitan tanaman buah okulai agar tetap terjaga potensinya, Selain memproduksi dan mengembangkan kami pun turut menjaga lingkungan hidup dalam bidang penghijauan.</p>
                 <p>Dalam memenuhi kebutuhan pasar yang dinamis dan kompetitif, petani bibit tanaman  memerlukan strategi rantai pasok dan peran, dan kami hadir dengan mitra - mitra kami untuk memenuhu kebutuhan konsumen dan pasar. </p>
-                </p>
             </div>
 
             <!-- Teks Deskripsi -->
@@ -222,6 +239,7 @@
                     <li><a href="tentang.html" class="hover:text-emerald-400 transition-all">Tentang</a></li>
                     <li><a href="pengiriman.html" class="hover:text-emerald-400 transition-all">Metode Pengiriman</a></li>
                     <li><a href="media.html" class="hover:text-emerald-400 transition-all">Media</a></li>
+                    <li><a href="faq.html" class="hover:text-emerald-400 transition-all">FAQ</a></li>
                 </ul>
             </div>
 
@@ -261,5 +279,17 @@
         </div>
     </footer>
 
+    <script>
+        function toggleMoreMenu() {
+            const menu = document.getElementById('more-menu');
+            const icon = document.getElementById('more-menu-icon');
+            const btn = document.querySelector('[aria-controls="more-menu"]');
+            const willShow = menu.classList.contains('hidden');
+            menu.classList.toggle('hidden');
+            icon.classList.toggle('fa-chevron-down');
+            icon.classList.toggle('fa-chevron-up');
+            btn.setAttribute('aria-expanded', willShow ? 'true' : 'false');
+        }
+    </script>
 </body>
 </html>
