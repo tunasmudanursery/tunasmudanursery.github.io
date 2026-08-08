@@ -151,6 +151,10 @@
             background-color: #e5e7eb;
             border-radius: 9999px;
         }
+        .produk-slider-track:focus-visible {
+            outline: 3px solid #10b981;
+            outline-offset: 2px;
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800 antialiased">
@@ -288,7 +292,7 @@
         </p>
 
         <!-- Slider manual: pengunjung geser/swipe sendiri, snap otomatis ke tiap kartu -->
-        <div class="produk-slider-track">
+        <div class="produk-slider-track" tabindex="0" role="region" aria-label="Daftar produk bibit tanaman, geser ke samping atau gunakan tombol panah kiri-kanan untuk melihat lebih banyak">
 
                 <!-- ===== 8 KARTU PRODUK ===== -->
                 <!-- Kartu 1 -->
@@ -298,8 +302,7 @@
                              alt="Bibit Durian Bersertifikat Dan Label"
                              width="600"
                              height="400"
-                             loading="eager"
-                             fetchpriority="high"
+                             loading="lazy"
                              class="w-full h-full object-cover">
                     </div>
                     <div class="p-5 flex-1 flex flex-col justify-between">
@@ -396,7 +399,7 @@
                     </div>
                 </div>
 
-                <!-- Kartu 5 (placeholder - foto & teks silakan ganti manual) -->
+                <!-- Kartu 5 -->
                 <div class="w-72 sm:w-80 shrink-0 mx-3 bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all border border-gray-100 flex flex-col justify-between">
                     <div class="relative h-56 bg-gray-100 overflow-hidden flex items-center justify-center">
                         <img src="bibit-petai-gobang.webp"
@@ -422,7 +425,7 @@
                     </div>
                 </div>
 
-                <!-- Kartu 6 (placeholder) -->
+                <!-- Kartu 6 -->
                 <div class="w-72 sm:w-80 shrink-0 mx-3 bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all border border-gray-100 flex flex-col justify-between">
                     <div class="relative h-56 bg-gray-100 overflow-hidden flex items-center justify-center">
                         <img src="nangka-orange-jumbo.webp"
@@ -448,7 +451,7 @@
                     </div>
                 </div>
 
-                <!-- Kartu 7 (placeholder) -->
+                <!-- Kartu 7 -->
                 <div class="w-72 sm:w-80 shrink-0 mx-3 bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all border border-gray-100 flex flex-col justify-between">
                     <div class="relative h-56 bg-gray-100 overflow-hidden flex items-center justify-center">
                         <img src="bibit-rambutan-rapiah.webp"
@@ -474,7 +477,7 @@
                     </div>
                 </div>
 
-                <!-- Kartu 8 (placeholder) -->
+                <!-- Kartu 8 -->
                 <div class="w-72 sm:w-80 shrink-0 mx-3 bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all border border-gray-100 flex flex-col justify-between">
                     <div class="relative h-56 bg-gray-100 overflow-hidden flex items-center justify-center">
                         <img src="bibit-alpukat-miki-ta21-hass.webp"
